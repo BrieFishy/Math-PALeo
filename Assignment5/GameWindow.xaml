@@ -1,0 +1,63 @@
+﻿<Window x:Class="Assignment5.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment5"
+        mc:Ignorable="d"
+        Title="Math PALeo" Height="700" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/jungle.png"/>
+        </Grid.Background>
+        <Border BorderBrush="White" BorderThickness="10" HorizontalAlignment="Stretch" Margin="30" VerticalAlignment="Stretch"  Background="#72FFFFFF" CornerRadius="50">
+            <Grid>
+                <StackPanel Name="gameBoardStackpanel">
+                    <Grid>
+                        <Border BorderBrush="#c45404" BorderThickness="5" Width="200" Height="50" HorizontalAlignment="Left" Margin="20" CornerRadius="10" Background="White">
+                            <Label Name="timerLabel" FontFamily="Snap ITC" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center">00:00:00</Label>
+                        </Border>
+                        <Button Name="exitButton" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" Click="exitButton_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Images/RedX.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                    <Label Name="feedbackLabel" Content="Good Job!" FontFamily="Snap ITC" FontSize="40" Foreground="#c45404" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Label Name="equationLabel" Content="1 + 1 =" HorizontalAlignment="Center" FontFamily="Snap ITC" FontSize="100" Margin="20,20"/>
+                        <Border BorderBrush="#c45404" Margin="20,0" Background="White" BorderThickness="5" Height="200" CornerRadius="20" Width="260">
+                            <TextBox Name="answerTextBox" FontFamily="Snap ITC" FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230" Height="170" TextWrapping="Wrap" KeyDown="OnKeyDown"/>
+                        </Border>
+
+                    </StackPanel>
+                    <Button Name="submitButton" FontFamily="Snap ITC" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="200" Click="submitButton_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="100"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Images/greenArrow.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <Border Name="startButtonBorder" BorderBrush="#c45404" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="5" Height="200" CornerRadius="20" Width="300">
+                    <Button Name="startButton" Content="Start" Foreground="Green" Background="White" FontFamily="Snap ITC" FontSize="80" HorizontalAlignment="Center" VerticalAlignment="Center" Width="270" Height="170" Click="startButton_Click"/>
+                </Border>
+                <Image Source="/Images/dinos/pterosaur.png" Width="300" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,-36,0,0"/>
+                <Image Source="/Images/dinos/allosaurus2.png" Width="400" Height="249" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-72,0,0,-58"/>
+                <Image Source="/Images/dinos/stegosaurus.png" Width="400" Height="249" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-442,-38" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

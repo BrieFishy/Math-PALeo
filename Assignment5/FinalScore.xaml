@@ -1,0 +1,49 @@
+﻿<Window x:Class="Assignment5.FinalScore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment5"
+        mc:Ignorable="d"
+        Title="Math PALeo" Height="700" Width="1000">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/jungle.png"/>
+        </Grid.Background>
+        <Border BorderBrush="White" BorderThickness="10" HorizontalAlignment="Stretch" Margin="30" VerticalAlignment="Stretch" Background="#72FFFFFF" CornerRadius="50">
+            <StackPanel>
+                <Grid Height="150">
+                    <Button Name="exitButton" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Width="100" Height="100" Click="ExitButton_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Images/RedX.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Label Name="playerNameLabel" Content="Bradley" VerticalAlignment="Bottom" FontFamily="Snap ITC" FontSize="80" Foreground="#c45404" HorizontalAlignment="Center"/>
+                </Grid>
+                <Label Name="playerAgeLabel" Content="Age: 7" FontFamily="Snap ITC" FontSize="60" Foreground="Green" HorizontalAlignment="Center"/>
+                <Label Name="timerLabel" Content="00:07:23" FontFamily="Snap ITC" FontSize="30" HorizontalAlignment="Center"/>
+                <Grid Margin="0,50,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1">
+                        <Label Name="correctScore" Content="7/10" FontFamily="Snap ITC" FontSize="50" Foreground="#c45404" HorizontalAlignment="Center" />
+                        <Label Content="Correct" FontFamily="Snap ITC" FontSize="30" Foreground="#c45404" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3">
+                        <Label Name="incorrectScore" Content="3/10" FontFamily="Snap ITC" FontSize="50" Foreground="#c45404" HorizontalAlignment="Center" />
+                        <Label Content="Incorrect" FontFamily="Snap ITC" FontSize="30" Foreground="#c45404" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Grid>
+                <Label Content="Good Job!" FontFamily="Snap ITC" FontSize="60" Foreground="Green" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <Image Source="/Images/dinos/plesiosaur.png" Width="400" Height="250" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-72,-30"/>
+        <Image Source="/Images/dinos/triceratops.png" Width="400" Height="250" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,181,-84,0"/>
+        <Image Source="/Images/dinos/tyrannosaurus1.png" Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-194,181,0,0"/>
+    </Grid>
+</Window>

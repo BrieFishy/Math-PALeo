@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "q7JFMDmtBq+Hcz5PAQa9jLfL0DQffAk6wagH+35Td2RvvZuWy3KVh1DRM+PkFZhstvSCz73eE40d5ctjBR9KXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Briel\\Desktop\\School\\Weber\\2023Spring\\CS3280\\Assignments\\Assignment5\\Assignment5\\Assignment5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Briel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Briel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Briel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\Briel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
